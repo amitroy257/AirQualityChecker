@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#E3F2FD">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Air Quality Checker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter City Name"
+        android:textColorHint="#546E7A"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif"
+        android:backgroundTint="#90CAF9"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:elevation="2dp" />
+
+    <Button
+        android:id="@+id/btnFetch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Get Air Quality"
+        android:backgroundTint="#1E88E5"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp"
+        android:layout_marginBottom="24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#263238"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4dp"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+    </ScrollView>
+</LinearLayout>
